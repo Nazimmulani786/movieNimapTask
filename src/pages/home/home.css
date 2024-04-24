@@ -1,0 +1,61 @@
+.posterImg{
+    height: 600px;
+}
+
+.posterImg > img {
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+.posterImg_overlay {
+    position: absolute;
+    padding: 5rem;
+    bottom: 0px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
+    opacity: 1;
+    transition: opacity .3s;
+}   
+
+.posterImg_overlay:hover {
+    opacity: 1;
+}
+
+.posterImg_title {
+    font-weight: 900;
+    font-size: 4rem;
+    margin-bottom: 0.4rem;
+    text-align: left;
+}
+
+.posterImg_runtime {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.posterImg_rating {
+    margin-left: 3rem;
+}
+
+.posterImg_des {
+    font-size: 1.2rem;
+    display: flex;
+    text-align: left;
+    height: 100px;
+}
+
+
+@media (max-width: 500px){
+    .posterImg_des {
+        font-size: 0.5rem;
+        display: flex;
+        text-align: left;
+        height: 100px;
+    }
+}

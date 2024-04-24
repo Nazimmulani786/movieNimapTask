@@ -1,0 +1,125 @@
+.navbar {
+    background-color: rgb(104, 171, 181);
+    position: sticky;
+}
+
+.navbar-nav {
+    display: flex;
+    position: relative;
+    top: 50%;
+    left: 40%;
+    justify-content: space-between; 
+    list-style: none;
+}
+
+.navbar-nav > li {
+    margin-right: 20px; 
+}
+
+.navbar-brand {
+    font-size: xx-large;
+}
+
+.btn {
+    background-color: rgb(52, 154, 98);
+    color: azure;
+}
+
+.search-results {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 20px;
+}
+
+.movie {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #d74f4f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movie__backdrop {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.movie-details {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.movie-poster {
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.movie__name {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.movie__genre {
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.movie__genres {
+    margin-bottom: 10px;
+}
+
+.synopsisText {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.movie__Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 150px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(239, 52, 52);
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .navbar-brand {
+        margin-bottom: 20px;
+    }
+
+    .navbar-nav > li {
+        margin-bottom: 10px;
+    }
+
+    .movie-details {
+        width: 90%;
+    }
+
+    .movie-poster {
+        width: 150px;
+    }
+}
